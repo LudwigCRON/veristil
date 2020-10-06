@@ -1,0 +1,195 @@
+STIL 1.0; 
+
+//***************************************************************************//
+//                             STIL VECTOR FILE                              //
+//Cadence(R) Modus(TM) DFT Software Solution, Version 19.11-s006_1, built Aug//
+//***************************************************************************//
+//                                                                           //
+//  FILE CREATED..............October 05, 2020 at 15:16:47                   //
+//                                                                           //
+//  PROJECT NAME..............atpg                                           //
+//                                                                           //
+//  TESTMODE..................FULLSCAN                                       //
+//                                                                           //
+//  INEXPERIMENT..............saradc_x2_atpg_atpg                            //
+//                                                                           //
+//  TDR.......................dummy.tdr                                      //
+//                                                                           //
+//  TEST PERIOD...............80.000   TEST TIME UNITS...........ns          //
+//  TEST PULSE WIDTH..........8.000                                          //
+//  TEST STROBE OFFSET........72.000   TEST STROBE TYPE..........edge        //
+//  TEST BIDI OFFSET..........0.000                                          //
+//  TEST PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                     SCAN OVERLAP..............yes         //
+//  SCAN PERIOD...............80.000   SCAN TIME UNITS...........ns          //
+//  SCAN PULSE WIDTH..........8.000                                          //
+//  SCAN STROBE OFFSET........8.000    SCAN STROBE TYPE..........edge        //
+//  SCAN BIDI OFFSET..........0.000                                          //
+//  SCAN PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//   Individually set PIs                                                    //
+//  "MCLK" (PI # 12)                                                         //
+//  TEST OFFSET...............8.000    PULSE WIDTH...............8.000       //
+//  SCAN OFFSET...............16.000   PULSE WIDTH...............8.000       //
+//                                                                           //
+//  Active TESTMODEs TM = 1 ..FULLSCAN                                       //
+//                                                                           //
+//  EXPERIMENT................1  Name = saradc_x2_atpg_atpg                  //
+//  DATA FORMAT...............binary                                         //
+//                                                                           //
+//  TEST SECTION..............1        TEST SECTION TYPE.........scan        //
+//                                                                           //
+//  The range of Tests in this Test Section......................1:1         //
+//                                                                           //
+//  TESTER TERMINATION........none     TERMINATION DOMINATION....tester      //
+//                                                                           //
+//***************************************************************************//
+
+  Include "STIL.FULLSCAN.saradc_x2_atpg_atpg.signals.stil"; 
+
+//***************************************************************************//
+//                            TIMING DEFINITIONS                             //
+//***************************************************************************//
+
+  Timing { 
+
+    WaveformTable "test_cycle" { Period '80.000000ns' ; 
+      Waveforms { 
+        "DACIN[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[3]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[4]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[5]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[6]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[7]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "ENABLE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "FORCE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "LOWCMVIN" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MCLK" { 01ZP { '0ns' P/P/P/P;  '8.000000ns' D/U/Z/U; '16.000000ns' D/U/Z/D; } } 
+        "MODE[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MODE[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MODE[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "PORB" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "RSTB" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELADC" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[3]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TESTANA" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TI" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TM" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TRIMCURR[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TRIMCURR[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "CMP" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } } 
+    } } 
+
+    WaveformTable "scan_cycle_TM_1" { Period '80.000000ns' ; 
+      Waveforms { 
+        "DACIN[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[3]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[4]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[5]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[6]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "DACIN[7]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "ENABLE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "FORCE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "LOWCMVIN" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MCLK" { 01ZP { '0ns' P/P/P/P;  '16.000000ns' D/U/Z/U; '24.000000ns' D/U/Z/D; } } 
+        "MODE[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MODE[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "MODE[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "PORB" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "RSTB" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELADC" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "SELOUT[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[2]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "STATE[3]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TE" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TESTANA" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TI" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TM" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TRIMCURR[0]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "TRIMCURR[1]" { 01Z  { '0.000000ns' D/U/Z; } } 
+        "CMP" { LHTX { '0ns' X/X/X/X; '8.000000ns' L/H/T/X; } } 
+    } } 
+} 
+
+//***************************************************************************//
+//                               TEST VECTORS                                //
+//***************************************************************************//
+
+PatternBurst 
+  MAIN_BRST { Termination { "ALLPOs" TerminateOff; } 
+              PatList { MAIN_TEST; } } 
+
+PatternExec 
+  MAIN_EXEC { PatternBurst MAIN_BRST; } 
+
+Pattern 
+  MAIN_TEST { 
+
+//***************************************************************************//
+//  TESTER LOOP...............1        PROCEDURES HAVE MEMORY....no          //
+//                                                                           //
+//  The range of Tests in this Tester Loop.......................1:1         //
+//                                                                           //
+//  TEST PROCEDURE............1        TYPE......................init        //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  TEST SEQUENCE.............         TYPE......................init        //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.1.1.1.1;  Stim_PI; 
+  Macro "TEST" { 
+    "ALLPIs" = \r11 Z 0ZZZZ11ZZZZZZZ1ZZ1ZZ; 
+    "ALLPOs" = X; } 
+
+//***************************************************************************//
+//  TEST PROCEDURE............2        TYPE......................normal      //
+//                                                                           //
+//  The range of Tests in this Test Procedure....................1:1         //
+//                                                                           //
+//  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
+//  STATIC FAULTS.............269      PERCENT STATIC FAULTS.....13.654822   //
+//  TEST SEQUENCE.............1        TYPE......................normal      //
+//***************************************************************************//
+
+//  Processing the Static: EVENT 1.1.1.2.1.1.1;  Scan_Load;  (no_overlap) 
+// Inserted the Scan Sequence:  Scan_Preconditioning_Sequence  
+//  Inserted the Static: EVENT Stim_PI; 
+  Macro "TEST" { 
+    "ALLPIs" = \r11 Z 0ZZZZ11ZZZZZZZ1ZZ1ZZ; 
+    "ALLPOs" = X; } 
+// Inserted the Scan Sequence # 1;  Scan_Sequence  
+  Macro "SCAN_TM_1" { 
+    "CR_1_TM_1" = \r8 0110 ; } 
+
+//  Processing the Static: EVENT 1.1.1.2.1.2.1;  Scan_Unload;  (no_overlap) 
+  "1.1.1.2.1.2": 
+// Inserted the Scan Sequence:  Scan_Preconditioning_Sequence  
+//  Inserted the Static: EVENT Stim_PI; 
+  Macro "TEST" { 
+    "ALLPIs" = \r11 Z 0ZZZZ11ZZZZZZZ1Z01ZZ; 
+    "ALLPOs" = X; } 
+// Inserted the Scan Sequence # 2;  Scan_Sequence  
+  Macro "SCAN_TM_1" { 
+    "OR_1_TM_1" = \r8 LHHL ; } 
+
+// Inserted final non-scan Pattern
+  Macro "TEST" { 
+    "ALLPIs" = \r11 Z 0ZZZZ11ZZZZZZZ1Z01ZZ; 
+    "ALLPOs" = X; } 
+  } 

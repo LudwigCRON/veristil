@@ -1,0 +1,15 @@
+Pattern example {
+    W _default_WFT_;
+    LABEL:  V { ALL = 00000000 00000000 00000000 00000000; }
+            V { ALL = 11111111 11111111 11111111 11111111; }
+    Loop 10 {  // implemented as a multi-vector loop
+        V { ALL = 11111111 11111111 11111111 11111111; }
+        V { ALL = HHHHHHHH HHHHHHHH HHHHHHHH HHHHHHHH; }
+        V { ALL = 00000000 00000000 00000000 00000000; }
+        V { ALL = LLLLLLLL LLLLLLLL LLLLLLLL LLLLLLLL; }
+    }
+    Loop 5 { // implemented as a repeat vector
+        V {ALL = 11111111 11111111 11111111 11111111; }
+    }
+    Stop;
+}

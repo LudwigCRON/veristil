@@ -1,0 +1,14 @@
+Timing "Param_Time_Set" {
+    WaveformTable "T1" {
+        Period '100nS';
+        Waveforms {
+            // functional continuity Timing
+            "Control_pins" { 0 { '45nS' D; }}
+            "Control_pins" { 1 { '50nS' U; }}
+            "Data_pins" { 0 {'10ns' D; '70nS' U; }}
+            "Data_pins" { 1 {'15ns' U; '75nS' D; }}
+            "Clock_pins" { 1 {'15ns' U; '75nS' D; }}
+            "Clock_pins" { 0 {'15ns' D; }}
+        }
+    }
+}

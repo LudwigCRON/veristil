@@ -1,0 +1,12 @@
+SignalGroups {
+    "porta" = ' "pa7" + "pa6" + "pa5" + "pa4" + "pa3" + "pa2" + "pa1"
+    + "pa0"' ;
+    "portb" = ' "pb7" + "pb6" + "pb5" + "pb4" + "pb3" + "pb2" + "pb1" + "pb0"' ;
+    all = 'porta + portb';
+    A = 'pa0+pa1+pa2+pa3' {
+        WFCMAP {
+            z->x; // single-WFC mapping
+            01->x; // two-WFC mapping (requires presence of \j)
+        } // end WFCMAP
+    } // end A
+}

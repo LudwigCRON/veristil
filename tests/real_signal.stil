@@ -1,0 +1,135 @@
+STIL 1.0; 
+
+//***************************************************************************//
+//                             STIL SIGNALS FILE                             //
+//Cadence(R) Modus(TM) DFT Software Solution, Version 19.11-s006_1, built Aug//
+//***************************************************************************//
+//                                                                           //
+//  FILE CREATED..............October 05, 2020 at 15:16:48                   //
+//                                                                           //
+//  PROJECT NAME..............atpg                                           //
+//                                                                           //
+//  TESTMODE..................FULLSCAN                                       //
+//                                                                           //
+//  INEXPERIMENT..............saradc_x2_atpg_atpg                            //
+//                                                                           //
+//  TDR.......................dummy.tdr                                      //
+//                                                                           //
+//  TEST PERIOD...............80.000   TEST TIME UNITS...........ns          //
+//  TEST PULSE WIDTH..........8.000                                          //
+//  TEST STROBE OFFSET........72.000   TEST STROBE TYPE..........edge        //
+//  TEST BIDI OFFSET..........0.000                                          //
+//  TEST PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                     SCAN OVERLAP..............yes         //
+//  SCAN PERIOD...............80.000   SCAN TIME UNITS...........ns          //
+//  SCAN PULSE WIDTH..........8.000                                          //
+//  SCAN STROBE OFFSET........8.000    SCAN STROBE TYPE..........edge        //
+//  SCAN BIDI OFFSET..........0.000                                          //
+//  SCAN PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//   Individually set PIs                                                    //
+//  "MCLK" (PI # 12)                                                         //
+//  TEST OFFSET...............8.000    PULSE WIDTH...............8.000       //
+//  SCAN OFFSET...............16.000   PULSE WIDTH...............8.000       //
+//                                                                           //
+//  Active TESTMODEs TM = 1 ..FULLSCAN                                       //
+//                                                                           //
+//***************************************************************************//
+
+//***************************************************************************//
+//                              DEFINE SIGNALS                               //
+//***************************************************************************//
+
+  Signals { 
+    "DACIN[0]" In;      // pinName = DACIN[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[1]" In;      // pinName = DACIN[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[2]" In;      // pinName = DACIN[2]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[3]" In;      // pinName = DACIN[3]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[4]" In;      // pinName = DACIN[4]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[5]" In;      // pinName = DACIN[5]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[6]" In;      // pinName = DACIN[6]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "DACIN[7]" In;      // pinName = DACIN[7]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "ENABLE" In;      // pinName = ENABLE; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "FORCE" In;      // pinName = FORCE; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "LOWCMVIN" In;      // pinName = LOWCMVIN; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "MCLK" In;      // pinName = MCLK;  tf = -ES  ; testOffset = 8.000000;  scanOffset = 16.000000;  
+    "MODE[0]" In;      // pinName = MODE[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "MODE[1]" In;      // pinName = MODE[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "MODE[2]" In;      // pinName = MODE[2]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "PORB" In;      // pinName = PORB; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "RSTB" In;      // pinName = RSTB;  tf = +TI  ; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "SELADC" In;      // pinName = SELADC;  tf = +TI  ; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "SELOUT[0]" In;      // pinName = SELOUT[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "SELOUT[1]" In;      // pinName = SELOUT[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "SELOUT[2]" In;      // pinName = SELOUT[2]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "STATE[0]" In;      // pinName = STATE[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "STATE[1]" In;      // pinName = STATE[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "STATE[2]" In;      // pinName = STATE[2]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "STATE[3]" In;      // pinName = STATE[3]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TE" In;      // pinName = TE;  tf = +SE  ; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TESTANA" In;      // pinName = TESTANA; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TI" In;      // pinName = TI;  tf =  SI  ; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TM" In;      // pinName = TM;  tf = +TI  ; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TRIMCURR[0]" In;      // pinName = TRIMCURR[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "TRIMCURR[1]" In;      // pinName = TRIMCURR[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "CMP" Out;      // pinName = CMP;  tf =  SO  ; 
+  } 
+
+//***************************************************************************//
+//                           DEFINE SIGNAL GROUPS                            //
+//***************************************************************************//
+
+  SignalGroups { 
+
+    "ALLPIs" = '"DACIN[0]"+"DACIN[1]"+"DACIN[2]"+"DACIN[3]"+"DACIN[4]"
+               +"DACIN[5]"+"DACIN[6]"+"DACIN[7]"+"ENABLE"+"FORCE"+"LOWCMVIN"
+               +"MCLK"+"MODE[0]"+"MODE[1]"+"MODE[2]"+"PORB"+"RSTB"+"SELADC"
+               +"SELOUT[0]"+"SELOUT[1]"+"SELOUT[2]"+"STATE[0]"+"STATE[1]"
+               +"STATE[2]"+"STATE[3]"+"TE"+"TESTANA"+"TI"+"TM"+"TRIMCURR[0]"
+               +"TRIMCURR[1]"'; 
+
+    "ALLPOs" = '"CMP"'; 
+
+    "CR_1_TM_1" = '"TI"' { ScanIn 32; } 
+
+    "OR_1_TM_1" = '"CMP"' { ScanOut 32; } 
+
+    "ALLCLKs_TM_1" = '"MCLK"'; 
+
+    "ALLECs_TM_1" = '"MCLK"'; 
+
+    "ALLSIs_CR_TM_1" = '"CR_1_TM_1"'; 
+
+    "ALLSOs_OR_TM_1" = '"OR_1_TM_1"'; 
+
+  } 
+
+//***************************************************************************//
+//                               DEFINE MACROS                               //
+//***************************************************************************//
+
+  MacroDefs { 
+
+    "TEST" { WaveformTable "test_cycle"; 
+      Vector { 
+        "ALLPOs" = %; 
+        "ALLPIs" = %; } } 
+
+    "SCAN_CYCLE_TM_1" { WaveformTable "scan_cycle_TM_1"; 
+      Vector { 
+        "ALLPOs" = %; 
+        "ALLPIs" = %; } } 
+
+    "SCAN_TM_1" { WaveformTable "scan_cycle_TM_1"; 
+      Condition { 
+        "ALLPOs" = X; 
+        "ALLSIs_CR_TM_1" = 0; 
+        "ALLCLKs_TM_1" = 0; 
+        } 
+      Shift { Vector { 
+        "ALLSOs_OR_TM_1" = #; 
+        "ALLSIs_CR_TM_1" = #; 
+        "ALLECs_TM_1" = P; } } } 
+} 
