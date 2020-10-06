@@ -1,0 +1,8 @@
+Signals {
+    "pc4" InOut;
+    irq InOut;
+    scan0 In { ScanIn; }
+}
+Signals{"pc4" InOut;irq InOut;scan0 In { ScanIn; }
+}
+Signals{"pc4" InOut;irq InOut;scan0 In{ScanIn;}}
